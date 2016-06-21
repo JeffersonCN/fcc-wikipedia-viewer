@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wikipedia Search Tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Material Design for Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wikipedia Search Tool</a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <div id="search-form" class="form-group">
+                    <label for="search-input" class="bmd-label-floating">Type here to search</label>
+                    <span class="input-group-btn d-inline">
+                <input type="text" id="search-input" class="d-inline form-control form-control-lg text-xs-center">
+                    <button id="search-button" type="button" class="btn btn-fab btn-fab-mini">
+                        <i class="material-icons">search</i>
+                    </button>
+                </span>
+                <span>or click <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">here</a> for a random article.</span>
+                </div>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div id="results" class="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div id="showing">
+
+                </div>
+                <div class="row" id="cardsContainer">
+
+                </div>
+            </div>
+        </div>
+        <div id="made-with" class="text-xs-center">
+            <p>Made with <i class="material-icons md-16">favorite</i> by <a href="https://jeffersoncn.github.io" target="_blank">@jeffersoncn</a></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.rawgit.com/HubSpot/tether/v1.3.2/dist/js/tether.min.js"></script>
+    <script src="https://cdn.rawgit.com/fezvrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.iife.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src=""></script>
+    <script>
+        $('body').bootstrapMaterialDesign()
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
