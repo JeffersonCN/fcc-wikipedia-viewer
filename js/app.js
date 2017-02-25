@@ -1,7 +1,7 @@
 ( function () {
     var App = function () {
         this.searchInput = $( '#search-input' );
-        this.url = "https://crossorigin.me/https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=10&namespace=0&search=";
+        this.url = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=10&namespace=0&origin=*&search=";
     }
     App.prototype = {
         showResults: function ( response ) {
